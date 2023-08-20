@@ -10,5 +10,5 @@ In the startup folder there is a script which is executed when the VM instance i
 # Compose
 A `docker-compose.yaml` file which contains services to run a Ghost blogging platform on the running VM instance. One service which contains the Ghost engine, one service which contains the Ghost database running on MySQL and one service containg the reverse proxy with Traefik.
 
-# Backups
+# Maintenance
 An update script to be frequently executed to keep the Docker containers up to date. This is optional.
