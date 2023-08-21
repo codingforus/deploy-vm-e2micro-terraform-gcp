@@ -58,7 +58,7 @@ provisioner "file" {
    }
  }
 provisioner "file" {
-   source      = "../backups/update-ghost.sh"
+   source      = "../maintenance/update-ghost.sh"
    destination = "/home/${var.user}/update-ghost.sh"
    connection {
      host        = google_compute_instance.gcp-ubnt-vm.network_interface.0.access_config.0.nat_ip
