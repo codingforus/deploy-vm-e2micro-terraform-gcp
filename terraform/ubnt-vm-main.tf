@@ -23,7 +23,7 @@ resource "google_compute_instance" "gcp-ubnt-vm" {
   }
 
   metadata = {
-    ssh-keys = "${var.user}:SSH_PUBLIC_KEY ${var.user}"
+    ssh-keys = "${var.user}:${file(var.publickeypath)}"
   }
 
   metadata_startup_script = "${file("../startup/startup.sh")}"
